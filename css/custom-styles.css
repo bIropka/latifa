@@ -632,7 +632,7 @@ footer[role='contentinfo'] br {
 }
 @media (max-width: 980px) {
     header[role='banner'] {
-        margin-bottom: 45px;
+        margin-bottom: 20px;
     }
     .logo {
         width: 250px;
@@ -672,7 +672,8 @@ footer[role='contentinfo'] br {
         width: calc(100% - 75px);
     }
     .form-mailing {
-        margin: 45px 0;
+        margin: 20px 0;
+        padding-top: 20px;
     }
     .form-mailing, .form-mailing .title, .form-mailing .sub-title {
         text-align: left;
