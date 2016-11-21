@@ -10,13 +10,6 @@ $(document).ready(function () {
      ******* clicks scripts
      ******************************************************************************************************************/
 
-    $('.aside-burger').click(function () {
-        
-        $(this).toggleClass('active');
-        $(this).siblings('aside').toggleClass('visible');
-        
-    });
-
     $('.burger').click(function () {
 
         $(this).toggleClass('active');
