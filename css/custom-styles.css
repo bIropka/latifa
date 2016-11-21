@@ -291,6 +291,8 @@ header[role='banner'] {
 .header-top {
     display: block;
     width: 100%;
+}
+.page-main .header-top {
     padding-top: 34.04040404040404%;
     background: transparent url('../source/images/background-header.jpg') no-repeat top center;
     background-size: cover;
