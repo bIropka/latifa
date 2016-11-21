@@ -2,7 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
+    <link rel="stylesheet" href="css/custom-styles.css">
 </head>
 <body>
 
@@ -12,11 +14,9 @@
 
         <div class="header-top">
 
-            <div class="wrapper-inner">
 
-                <a href="index.html" class="logo"></a>
+            <a href="index.html" class="logo"></a>
 
-            </div>
 
         </div>
 
@@ -54,6 +54,8 @@
 
     <div class="wrapper-inner">
 
+        <div class="aside-burger"></div>
+
         <main class="content-panel">
 
             <article>
@@ -76,7 +78,7 @@
 
                 <ul>
                     <li>
-                        <a href="#" class="rose-text">система флай-леди, которую я со временем адаптировала под Ислам</a>
+                        <a href="#" class="rose-text">система флай-леди</a>, которую я со временем адаптировала под Ислам
                     </li>
                     <li>
                         система <a href="#" class="rose-text">меню на неделю</a>, которая позволяет не тратить лишнее время и лишние деньги на еду
@@ -114,7 +116,7 @@
                     Если у вас возникнут какие-то вопросы, вы всегда можете задать их мне в личных сообщениях в соцсетях или нажав на эту кнопку
                 </p>
 
-                <button>задать вопрос</button>
+                <button class="button-empty">задать вопрос</button>
 
             </article>
 
@@ -122,9 +124,7 @@
 
         <aside>
 
-            <div class="aside-burger"></div>
-
-            <form action="#" class="form-search">
+            <form action="#" class="form-search clearfix">
 
                 <label>
                     <input type="text" placeholder="Поиск...">
@@ -144,64 +144,88 @@
                     <input type="text" placeholder="Ваш e-mail">
                 </label>
 
-                <button type="submit">Подписаться!</button>
+                <button type="submit" class="button-filled">Подписаться!</button>
 
             </form>
 
             <div class="about-me">
 
-                <div class="title-block">ОБО МНЕ</div>
+                <div class="title-block"><span>ОБО МНЕ</span></div>
 
                 <img src="source/images/photo-author.png" alt="me">
 
                 <p>Что они хотят знать обо мне?</p>
 
-                <p>Что я соблюдающая мусульманка – это очень важно. </p>
+                <p>Что я соблюдающая мусульманка –<br> это очень важно. </p>
 
-                <a href="#"></a>
+                <a href="#">Читать больше</a>
 
             </div>
 
             <div class="soon">
 
-                <div class="title-block"></div>
+                <div class="title-block"><span>скоро</span></div>
 
                 <ul>
 
                     <li class="clearfix">
-                        <img src="source/images/soon-1.png" alt="soon">
-                        <h3><a href="#"></a></h3>
-                        <time>Дата</time>
+                        <div class="image-wrap">
+                            <img src="source/images/soon-1.png" alt="soon">
+                        </div>
+                        <div class="event-info">
+                            <h3><a href="#">Тренинг «Как создать и раскрутить собственный сайт»</a></h3>
+                            <time>Дата</time>
+                        </div>
                     </li>
 
                     <li class="clearfix">
-                        <img src="source/images/soon-2.png" alt="soon">
-                        <h3><a href="#"></a></h3>
-                        <time>Дата</time>
+                        <div class="image-wrap">
+                            <img src="source/images/soon-2.png" alt="soon">
+                        </div>
+                        <div class="event-info">
+                            <h3><a href="#">Как стать дорогим копирайтером</a></h3>
+                            <time>Дата</time>
+                        </div>
                     </li>
 
                     <li class="clearfix">
-                        <img src="source/images/soon-3.png" alt="soon">
-                        <h3><a href="#"></a></h3>
-                        <time>Дата</time>
+                        <div class="image-wrap">
+                            <img src="source/images/soon-3.png" alt="soon">
+                        </div>
+                        <div class="event-info">
+                            <h3><a href="#">Блог: создать и раскрутить</a></h3>
+                            <time>Дата</time>
+                        </div>
                     </li>
 
                     <li class="clearfix">
-                        <img src="source/images/soon-4.png" alt="soon">
-                        <h3><a href="#"></a></h3>
-                        <time>Дата</time>
+                        <div class="image-wrap">
+                            <img src="source/images/soon-4.png" alt="soon">
+                        </div>
+                        <div class="event-info">
+                            <h3><a href="#">Женственность мусульманки</a></h3>
+                            <time>Дата</time>
+                        </div>
                     </li>
 
                     <li class="clearfix">
-                        <img src="source/images/soon-5.png" alt="soon">
-                        <h3><a href="#"></a></h3>
-                        <time>Дата</time>
+                        <div class="image-wrap">
+                            <img src="source/images/soon-5.png" alt="soon">
+                        </div>
+                        <div class="event-info">
+                            <h3><a href="#">Инфобизнес: создать и раскрутить</a></h3>
+                            <time>Дата</time>
+                        </div>
                     </li>
 
                     <li class="clearfix">
-                        <img src="source/images/soon-6.png" alt="soon">
-                        <h3><a href="#"></a></h3>
-                        <time>Дата</time>
+                        <div class="image-wrap">
+                            <img src="source/images/soon-6.png" alt="soon">
+                        </div>
+                        <div class="event-info">
+                            <h3><a href="#">Инстаграм: с нуля до результата</a></h3>
+                            <time>Дата</time>
+                        </div>
                     </li>
 
                 </ul>
@@ -214,22 +238,28 @@
 
     <footer role="contentinfo">
 
-        <div class="copyrights">
-            <p><span>Copyright © 2015 Латифа: курсы для мусульманок. «К порядку – маленьким шагами!»</span></p>
-            <p>ИНН 025902820606 ОГРНИП 316028000140431</p>
+        <div class="wrapper-inner">
+
+            <div class="copyrights">
+                <p><span>Copyright © 2015 Латифа: курсы для мусульманок. «К порядку – маленьким шагами!»</span></p>
+                <p>ИНН 025902820606<br> ОГРНИП 316028000140431</p>
+            </div>
+
+            <ul class="social-links">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+
+            <a href="tel:+79279477376" class="phone">+7-927-947-73-76</a>
+
         </div>
-
-        <ul class="social-links">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-        </ul>
-
-        <a href="tel:+79279477376" class="phone">+7-927-947-73-76</a>
 
     </footer>
 
 </div>
 
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/custom-scripts.js"></script>
 </body>
 </html>
