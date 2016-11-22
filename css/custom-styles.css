@@ -110,25 +110,25 @@ textarea:focus::-moz-placeholder {color: transparent;}
 textarea:focus:-moz-placeholder {color: transparent;}
 textarea:focus:-ms-input-placeholder {color: transparent;}
 
-.button-empty {
+.button-dark-rose {
     display: block;
     width: 200px;
     height: 40px;
     border: 3px solid #fc7f8e;
     text-transform: uppercase;
-    color: #fc7f8e;
-    background: transparent;
+    color: #ffffff;
+    background: #fc7f8e;
     line-height: 34px;
     font-size: 0.875em;
     font-family: 'OpenSans Semibold', sans-serif;
     margin: 50px auto;
 }
-.button-empty:hover {
+.button-dark-rose:hover {
     border: 3px solid #fc7f8e;
-    background: #fc7f8e;
-    color: #ffffff;
+    background: #ffffff;
+    color: #fc7f8e;
 }
-.button-empty:active {
+.button-dark-rose:active {
     border: 2px solid #ffffff;
 }
 
@@ -199,7 +199,7 @@ img {
 .wrapper-inner {
     display: block;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1400px;
     position: relative;
     margin: 0 auto;
     padding: 0 15px;
@@ -217,7 +217,7 @@ main {
 
 }
 main.content-panel {
-    padding: 0 525px 100px 20px;
+    padding: 0 525px 100px 0;
 }
 
 aside {
@@ -250,6 +250,7 @@ article {
 article p {
     text-align: justify;
     margin: 35px 30px;
+    font-size: 1.1em;
 }
 article .rose-text {
     color: #fd94a0;
@@ -264,6 +265,7 @@ article ul li{
     margin: 35px 0;
     padding-left: 40px;
     position: relative;
+    font-size: 1.1em;
 }
 article ul li:before{
     content: '';
@@ -291,12 +293,15 @@ header[role='banner'] {
 .header-top {
     display: block;
     width: 100%;
-}
-.page-main .header-top {
-    padding-top: 34.04040404040404%;
-    background: transparent url('../source/images/background-header.jpg') no-repeat top center;
+    padding-top: 16%;
+    background: transparent url('../source/images/background-header-small.jpg') no-repeat left center;
     background-size: cover;
     position: relative;
+}
+.page-main .header-top {
+    padding-top: 15%;
+    background: transparent url('../source/images/background-header.jpg') no-repeat center;
+    background-size: cover;
 }
 
 .logo {
@@ -307,9 +312,14 @@ header[role='banner'] {
     background-size: cover;
     position: absolute;
     margin:auto;
-    left: 17.5%;
+    left: 0;
+    right: 0;
     top: 0;
     bottom: 0;
+}
+.page-main .logo {
+    left: 17.5%;
+    right: auto;
 }
 
 .header-nav {
@@ -328,18 +338,19 @@ nav ul {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding-right: 17%;
+    padding-right: 30%;
 }
-nav ul li {
 
-}
 nav ul li a {
-    font-family: 'OpenSans Semibold', sans-serif;
-    font-size: 1.25em;
+    font-family: 'OpenSans Bold', sans-serif;
+    font-size: 1.15em;
     text-transform: uppercase;
 }
+nav ul li a.free-link {
+    font-size: 1.5em;
+}
 nav ul li a:hover {
-    font-size: 1.625em;
+    color: #fd94a0;
     text-decoration: none;
 }
 
@@ -390,12 +401,29 @@ footer[role='contentinfo'] .wrapper-inner {
 footer[role='contentinfo'] p {
     font-size: 1.125em;
 }
+footer[role='contentinfo'] .wrapper-inner p:nth-child(2) {
+    padding-left: 50px;
+    margin-top: 10px;
+}
 footer[role='contentinfo'] p span {
     font-size: inherit;
     font-family: 'OpenSans Bold', sans-serif;
 }
-footer[role='contentinfo'] a.phone {
+footer[role='contentinfo'] .phone {
     font-family: 'OpenSans Bold', sans-serif;
+    padding-left: 35px;
+    position: relative;
+}
+footer[role='contentinfo'] .phone:before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url('../source/images/whatsapp-icon.png') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 footer[role='contentinfo'] br {
     display: none;
@@ -530,13 +558,49 @@ footer[role='contentinfo'] br {
 }
 
 /**********************************************************************************************************************
-********** aside
+********** about-me
 ***********************************************************************************************************************/
 
+.page-about-me article img {
+    max-width: 292px;
+    margin: 50px auto;
+}
+.page-about-me article .title, .page-about-me article .sub-title {
+    font-family: 'OpenSans Bold', sans-serif;
+    text-align: center;
+    font-size: 1.875em;
+}
+.page-about-me article .sub-title {
+    font-size: 1.1em;
+}
+.courses, .why-courses {
+    width: 48.5%;
+    float: left;
+    margin-top: 50px;
+}
+.courses {
+    margin-right: 3%;
+}
+article.courses .title {
+    height: 90px;
+    line-height: 90px;
+    background: #fd94a0;
+    color: #ffffff;
+    text-align: left;
+    padding: 0 30px;
+}
+.courses p span {
+    font-size: inherit;
+    font-weight: 600;
+}
+article.why-courses img {
+    max-width: 119px;
+    margin: 15px auto 50px;
+}
 
 
 /**********************************************************************************************************************
-********** aside
+********** page success-stories
 ***********************************************************************************************************************/
 
 
@@ -569,18 +633,13 @@ footer[role='contentinfo'] br {
 ********** media queries
 ***********************************************************************************************************************/
 
-@media (max-width: 1650px) {
-    main.content-panel {
-        padding: 0 440px 100px 20px;
-    }
-
-    aside {
-        width: 400px;
-    }
-}
 @media (max-width: 1400px) {
     * {
         font-size: 14px;
+    }
+    .logo {
+        width: 400px;
+        height: 151px;
     }
     main.content-panel {
         padding: 0 340px 100px 20px;
@@ -615,6 +674,10 @@ footer[role='contentinfo'] br {
     }
 }
 @media (max-width: 1080px) {
+    .logo {
+        width: 300px;
+        height: 113px;
+    }
     footer[role='contentinfo'] .wrapper-inner {
         display: block;
         padding-top: 70px;
@@ -634,7 +697,7 @@ footer[role='contentinfo'] br {
     header[role='banner'] {
         margin-bottom: 20px;
     }
-    .logo {
+    .page-main .logo {
         width: 250px;
         height: 94px;
     }
@@ -768,6 +831,10 @@ footer[role='contentinfo'] br {
 }
 @media (max-width: 800px) {
     .logo {
+        width: 180px;
+        height: 101px;
+    }
+    .logo, .page-main .logo {
         width: 200px;
         height: 75px;
     }
@@ -787,6 +854,11 @@ footer[role='contentinfo'] br {
         top: 20px;
         left: 200px;
     }
+    .courses, .why-courses {
+        width: 100%;
+        float: none;
+        margin: 50px 0 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -794,6 +866,10 @@ footer[role='contentinfo'] br {
         font-size: 1.5em;
     }
     .logo {
+        width: 110px;
+        height: 41px;
+    }
+    .page-main .logo {
         width: 120px;
         height: 45px;
     }
@@ -812,20 +888,31 @@ footer[role='contentinfo'] br {
     article ul li {
         padding-left: 25px;
     }
+    .wrapper {
+        padding-bottom: 200px;
+    }
+    footer[role='contentinfo'] {
+        height: 200px;
+    }
     footer[role='contentinfo'] .wrapper-inner {
-        padding-top: 40px;
+        padding-top: 80px;
     }
     footer[role='contentinfo'] .social-links {
         position: absolute;
-        top: 7px;
+        top: 25px;
         left: 15px;
     }
     footer[role='contentinfo'] .phone {
         position: absolute;
-        top: 12px;
-        left: 160px;
+        top: 30px;
+        left: auto;
+        right: 15px;
     }
     footer[role='contentinfo'] br {
         display: block;
+    }
+    footer[role='contentinfo'] .wrapper-inner p:nth-child(2) {
+        padding-left: 0;
+        margin-top: 10px;
     }
 }
