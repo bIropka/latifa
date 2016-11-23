@@ -122,11 +122,13 @@ textarea:focus:-ms-input-placeholder {color: transparent;}
     font-size: 0.875em;
     font-family: 'OpenSans Semibold', sans-serif;
     margin: 50px auto;
+    text-align: center;
 }
 .button-dark-rose:hover {
     border: 3px solid #fc7f8e;
     background: #ffffff;
     color: #fc7f8e;
+    text-decoration: none;
 }
 .button-dark-rose:active {
     border: 2px solid #ffffff;
@@ -688,10 +690,69 @@ article.why-courses img {
 
 
 /**********************************************************************************************************************
-********** aside
+********** study
 ***********************************************************************************************************************/
 
+.courses-list li {
+    margin-bottom: 10%;
+}
 
+.tag {
+    color: #fc7f8e;
+    text-align: center;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-family: 'OpenSans Semibold', sans-serif;
+}
+.courses-list li h2 {
+    margin: 30px 35px 0;
+    line-height: 1;
+}
+.courses-list li .course-info {
+    margin: 20px 35px;
+    line-height: 1;
+}
+.courses-list li .course-info {
+    margin: 25px 35px 40px;
+    line-height: 1;
+    text-align: center;
+    font-size: 0.875em;
+}
+.courses-list li .course-info time, .courses-list li .course-info span {
+    font-size: inherit;
+}
+
+.pagination ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pagination ul li a {
+    display: block;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.pagination ul li a:hover {
+    color: #fd94a0;
+    text-decoration: none;
+}
+.pagination ul li a.active, .pagination ul li a.active:hover {
+    background: #fc7f8e;
+    color: #ffffff;
+    text-decoration: none;
+}
+.pagination > a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.125em;
+    margin-left: 25px;
+}
 
 /**********************************************************************************************************************
 ********** aside
@@ -979,6 +1040,23 @@ article.why-courses img {
         padding-top: 0;
         height: 100px;
     }
+    .courses-list li h2 {
+        margin: 20px 15px 0;
+        line-height: 1;
+    }
+    .courses-list li p {
+        margin: 15px;
+    }
+    .courses-list li .course-info {
+        margin: 10px 15px;
+        line-height: 1;
+    }
+    .courses-list li .course-info {
+        margin: 15px 15px 20px;
+    }
+    .courses-list li .button-dark-rose {
+        margin: 25px auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1030,6 +1108,11 @@ article.why-courses img {
     footer[role='contentinfo'] .wrapper-inner p:nth-child(2) {
         padding-left: 0;
         margin-top: 10px;
+    }
+    .pagination ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
     }
 }
 
