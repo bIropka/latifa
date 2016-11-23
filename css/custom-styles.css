@@ -605,7 +605,7 @@ article.why-courses img {
 ********** page success-stories
 ***********************************************************************************************************************/
 
-.page-success-stories .form-search {
+.page-success-stories .form-search, .page-free .form-search {
     width: 32%;
     float: right;
 }
@@ -676,12 +676,12 @@ article.why-courses img {
     top: 0;
     z-index: 11;
 }
-.page-success-stories .form-mailing {
+.page-success-stories .form-mailing, .page-free .form-mailing {
     border: none;
     margin-top: 0;
     padding-top: 0;
 }
-.page-success-stories .form-mailing button {
+.page-success-stories .form-mailing button, .page-free .form-mailing button {
     height: 50px;
     line-height: 50px;
 }
@@ -920,10 +920,10 @@ article.why-courses img {
     main.content-panel {
         padding: 0 0 60px;
     }
-    .page-success-stories h1, .page-success-stories .form-search {
+    .page-success-stories h1, .page-free .form-search {
         float: none;
     }
-    .page-success-stories .form-search {
+    .page-success-stories .form-search, .page-free .form-search {
         margin-top: 30px;
         width: 100%;
     }
@@ -961,15 +961,19 @@ article.why-courses img {
     .content-list li h2 {
         font-size: 1.5em;
     }
+    .content-list li:last-child {
+        width: 100%;
+        margin-right: 0;
+    }
+    .page-success-stories .form-mailing,.page-free .form-mailing {
+        margin: 50px 0;
+    }
 }
 
 @media (max-width: 640px) {
     .content-list li, .content-list li:nth-child(2n), .content-list li:nth-child(3n) {
         width: 100%;
         margin-right: 0;
-    }
-    .page-success-stories .form-mailing {
-        margin: 50px 0;
     }
     .header-top {
         padding-top: 0;
