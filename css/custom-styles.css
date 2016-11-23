@@ -755,10 +755,37 @@ article.why-courses img {
 }
 
 /**********************************************************************************************************************
-********** aside
+********** contacts
 ***********************************************************************************************************************/
 
-
+.contacts-list li {
+    display: block;
+    margin-bottom: 20px;
+}
+.contacts-list li:last-child {
+    margin-bottom: 0;
+}
+.icon-contact {
+    display: inline-block;
+    vertical-align: middle;
+    width: 51px;
+    margin-right: 50px;
+    top: 0;
+}
+.contact-links {
+    display: inline-block;
+    vertical-align: middle;
+}
+.contacts-list li a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.25em;
+}
+.contacts-list li .icon-group {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 
 /**********************************************************************************************************************
 ********** aside
@@ -988,6 +1015,9 @@ article.why-courses img {
         margin-top: 30px;
         width: 100%;
     }
+    .contacts-list {
+        margin-top: 75px;
+    }
 }
 @media (max-width: 800px) {
     .logo {
@@ -1028,6 +1058,22 @@ article.why-courses img {
     }
     .page-success-stories .form-mailing,.page-free .form-mailing {
         margin: 50px 0;
+    }
+    .contacts-list {
+        display: block;
+        width: 100%;
+        overflow: auto;
+    }
+    .contacts-list li {
+        margin-bottom: 40px;
+    }
+    .icon-contact {
+        display: block;
+        margin: 0 auto 20px;
+    }
+    .contact-links {
+        display: block;
+        text-align: center;
     }
 }
 
@@ -1113,6 +1159,9 @@ article.why-courses img {
         width: 40px;
         height: 40px;
         line-height: 40px;
+    }
+    .contacts-list li a {
+        display: block;
     }
 }
 
